@@ -1,0 +1,52 @@
+/*********** RESET ***********/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*********** FONT ***********/
+@font-face {
+  font-family: "opensans";
+  src: url(../../public/fonts/opensans-variablefont_wdthwght-webfont.woff2);
+}
+
+/*********** STYLE ***********/
+main {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+body {
+  background-color: #121212;
+  color: white;
+  font-family: opensans, monospace;
+}
+
+/*********** TEXT ***********/
+h1 {
+  font-weight: 100;
+}
+h2 {
+  font-weight: 100;
+  margin: 10px 0 10px 0;
+}
+
+/*********** KNAP ***********/
+.knap {
+  border: solid 1px;
+  border-color: white;
+  padding: 14px;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.knap:hover {
+  background-color: rgba(255, 255, 255, 0.232);
+}

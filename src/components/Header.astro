@@ -1,0 +1,44 @@
+---
+import "../pages/style.css";
+---
+
+<header>
+  <div class="header_indhold">
+    <a class="header_a" href="#"><img id="logo" src="../../public/img/re_logo.png" alt="Royal Escapes Logo" /></a>
+    <nav>
+      <ul>
+        <li><a class="header_a knap" href="https://www.royalescapes.dk/">GÅ TIL HJEMMESIDEN</a></li>
+        <li><a class="header_a knap" href="#">SKRIV EN ANMELDELSE</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<style>
+  .header_indhold {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+  }
+  header {
+    margin: 10px 20px 0px 20px;
+  }
+  ul {
+    display: flex;
+    gap: 50px;
+    justify-content: end;
+  }
+  li {
+    list-style: none;
+  }
+  .header_a {
+    text-decoration: none;
+  }
+  #logo,
+  nav {
+    flex: 1;
+  }
+  #logo {
+    width: 15%;
+  }
+</style>
