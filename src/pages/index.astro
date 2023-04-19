@@ -1,18 +1,45 @@
 ---
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
+import MainLayout from "../components/MainLayout.astro";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
-  </head>
-  <body>
-    <Header />
-    <Footer />
-  </body>
-</html>
+<MainLayout>
+  <img src="../../public/img/queen.jpg" alt="Header billede" />
+  <div>
+    <p class="testemonial">"Det fedeste Escape Room jeg nogensinde har prøvet!"</p>
+    <p class="writer">- Jørgen Jørgensøn, 2022.</p>
+    <div class="testemonial_knap">
+      <a class="knap" href="/indsend">SKRIV EN ANMELDELSE</a>
+    </div>
+  </div>
+  <div class="quiz">
+    <p>QUIZ - Hvilket Escape Room passer dig bedst?</p>
+    <p>Ja/Nej</p>
+  </div>
+</MainLayout>
+
+<style>
+  .testemonial {
+    text-align: center;
+    font-size: 2.3rem;
+    padding-top: 20px;
+  }
+
+  .writer {
+    text-align: right;
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-right: 100px;
+  }
+
+  .testemonial_knap {
+    text-align: center;
+  }
+
+  .quiz {
+    padding-top: 50px;
+    padding-bottom: 20px;
+
+    text-align: center;
+    font-size: 2rem;
+  }
+</style>
