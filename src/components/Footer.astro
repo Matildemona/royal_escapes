@@ -1,0 +1,54 @@
+---
+import "../pages/style.css";
+---
+
+<footer>
+  <div class="grid_1_1_1">
+    <div class="box">
+      <p>Kontakt Os</p>
+      <br />
+      <p>info@royalescapes.dk</p>
+    </div>
+    <div class="box">
+      <p>Royal Escapes</p>
+      <br />
+      <p>København K</p>
+      <p>Fredericiagade 30</p>
+      <p>1310 København</p>
+    </div>
+    <div class="box inline">
+      <a href="#"> <img class="some_logo" src="../../public/img/insta_logo.webp" alt="instagram" /></a>
+      <br />
+      <br />
+      <a href="#"> <img class="some_logo" src="../../public/img/face_logo.webp" alt="facebook" /></a>
+    </div>
+  </div>
+
+  <p id="copyright">Copyright Royal Escapes 2021© All Rights Reserved</p>
+</footer>
+
+<style>
+  footer {
+    padding: 60px 0 10px 0;
+    max-width: 1200px;
+    margin-inline: auto;
+  }
+  #copyright {
+    text-align: center;
+    margin: 20px;
+  }
+  .grid_1_1_1 {
+    display: grid;
+    grid-template-columns: 5fr 5fr 1fr;
+    gap: 20px;
+  }
+  .box {
+    background-color: rgb(35, 35, 35);
+    text-align: center;
+    padding: 10px;
+  }
+  .some_logo {
+    width: 40%;
+    display: inline;
+  }
+</style>
