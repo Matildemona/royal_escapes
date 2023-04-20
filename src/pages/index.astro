@@ -3,7 +3,8 @@ import MainLayout from "../components/MainLayout.astro";
 ---
 
 <MainLayout>
-  <img src="../../public/img/queen.jpg" alt="Header billede" />
+  <img class="img_normal" src="../../public/img/queen.jpg" alt="Header billede" />
+  <img class="img_uv" src="../../public/img/queen_uv.png" alt="Header billede UV" />
   <div>
     <p class="testemonial">"Det fedeste Escape Room jeg nogensinde har prøvet!"</p>
     <p class="writer">- Jørgen Jørgensøn, 2022.</p>
@@ -41,5 +42,32 @@ import MainLayout from "../components/MainLayout.astro";
 
     text-align: center;
     font-size: 2rem;
+  }
+  .img_normal {
+  }
+  .img_uv {
+    display: block;
+    margin-top: -571px;
+    animation: uv_kf 8s linear infinite both;
+  }
+
+  @keyframes uv_kf {
+    /*Animation der skifter billede*/
+    0% {
+      opacity: 0%;
+    }
+    30% {
+      opacity: 0%;
+    }
+    40% {
+      opacity: 100%;
+    }
+    70% {
+      opacity: 100%;
+    }
+
+    100% {
+      opacity: 0%;
+    }
   }
 </style>
