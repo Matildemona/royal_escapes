@@ -1,0 +1,16 @@
+---
+const { data } = Astro.props;
+
+function getFirstNChars(str, length) {
+  return str.substring(0, length);
+}
+---
+
+<article>
+  <h2>{data.name}</h2>
+
+  <p>
+    {getFirstNChars(data.text, 20)}...
+    <a href={"testimonials/" + data.name + data.id}>se mere</a>
+  </p>
+</article>
