@@ -1,8 +1,16 @@
 ---
 import MainLayout from "../components/MainLayout.astro";
+import AddTestimonial from "../components/AddTestimonial.astro";
 ---
 
 <MainLayout>
-  <p>testemonials</p>
-  <a class="knap" href="#">SKRIV EN ANMELDELSE</a>
+  <h1>SKRIV EN ANMELDELSE</h1>
+  <AddTestimonial />
 </MainLayout>
+
+<style>
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+</style>

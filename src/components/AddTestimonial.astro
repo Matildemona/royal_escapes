@@ -1,15 +1,20 @@
 ---
 ---
 
-<form>
-  <label for="name">Navn:</label>
-  <input id="name" name="name" type="text" required />
-
-  <label for="text">Besked:</label>
-  <textarea id="text" name="text" rows="6" required></textarea>
-
-  <button type="submit">Submit</button>
-</form>
+<div id="send_formular">
+  <form>
+    <label for="name">Navn</label><br />
+    <input id="name" name="name" type="text" size="47" required />
+    <br />
+    <br />
+    <label for="text">Besked</label>
+    <br />
+    <textarea id="text" name="text" rows="6" cols="45" required></textarea>
+    <br />
+    <br />
+    <button class="knap default_knap" type="submit">Send</button>
+  </form>
+</div>
 
 <script>
   function addTestimonial(newTestimonial) {
@@ -35,7 +40,7 @@
       .then((res) => res.json())
       .then((data) => {
         console.log("data:", data);
-        //når dden er færdig med at putte i databasen går den til filen addTestimonialfeedback "/" er for at sikre at den leder i roden
+        //når den er færdig med at putte i databasen går den til filen addTestimonialfeedback "/" er for at sikre at den leder i roden
         window.location.href = "/";
       });
   }
@@ -54,3 +59,14 @@
     addTestimonial(obj);
   });
 </script>
+
+<style>
+  #send_formular {
+    margin-inline: auto;
+    width: 29%;
+    padding-bottom: 30px;
+  }
+  .default_knap {
+    background-color: rgba(255, 255, 255, 0);
+  }
+</style>
