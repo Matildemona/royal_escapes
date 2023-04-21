@@ -4,6 +4,10 @@ import Testimonials from "../components/Testimonials.astro";
 ---
 
 <MainLayout>
+  <!-- LOTTIEFILES -->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" is:inline></script>
+  <lottie-player id="lottiefile" src="../../public/lottiefiles/lottiefile_ny.json" mode="bounce" background="transparent" speed="1" style="width: 1200px; height: 571px;" autoplay loop></lottie-player>
+  <!-- IMAGES -->
   <img class="img_normal" src="../../public/img/queen.jpg" alt="Header billede" />
   <img class="img_uv" src="../../public/img/queen_uv.png" alt="Header billede UV" />
   <div>
@@ -16,24 +20,28 @@ import Testimonials from "../components/Testimonials.astro";
     <p>QUIZ - Hvilket Escape Room passer dig bedst?</p>
     <p>Ja/Nej</p>
   </div>
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-  <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
-  <lottie-player id="tenthLottie" src="../lottiefiles/lottiefile.json" background="transparent" speed="1" style="width: 300px; height: 300px;"></lottie-player>
-  <script>
+
+  <!-- <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js" is:inline></script> -->
+  <!--   <script>
     LottieInteractivity.create({
-      player: "#tenthLottie",
-      mode: "cursor",
+      player: "#firstLottie",
+      mode: "scroll",
       actions: [
         {
-          type: "click",
-          forceFlag: false,
+          visibility: [0, 1.0],
+          type: "seek",
+          frames: [0, 300],
         },
       ],
     });
-  </script>
+  </script> -->
 </MainLayout>
 
 <style>
+  #lottiefile {
+    position: absolute;
+    z-index: 100;
+  }
   .testemonial {
     text-align: center;
     font-size: 2.3rem;
