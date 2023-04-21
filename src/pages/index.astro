@@ -16,6 +16,21 @@ import Testimonials from "../components/Testimonials.astro";
     <p>QUIZ - Hvilket Escape Room passer dig bedst?</p>
     <p>Ja/Nej</p>
   </div>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+  <lottie-player id="tenthLottie" src="../lottiefiles/lottiefile.json" background="transparent" speed="1" style="width: 300px; height: 300px;"></lottie-player>
+  <script>
+    LottieInteractivity.create({
+      player: "#tenthLottie",
+      mode: "cursor",
+      actions: [
+        {
+          type: "click",
+          forceFlag: false,
+        },
+      ],
+    });
+  </script>
 </MainLayout>
 
 <style>
