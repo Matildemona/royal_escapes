@@ -12,8 +12,9 @@ function getFirstNChars(str, length) {
 <article>
   <br />
   <p>
-    {getFirstNChars(data.text, 100)}...
+    "{getFirstNChars(data.text, 100)}"
   </p>
+  <br />
   <h2>- {data.name}, {data.year}.</h2>
   <br />
 </article>
@@ -21,5 +22,12 @@ function getFirstNChars(str, length) {
 <style>
   article {
     text-align: center;
+    padding: 40px;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+  h2 {
+    margin-left: 300px;
   }
 </style>

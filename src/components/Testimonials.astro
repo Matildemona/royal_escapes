@@ -9,14 +9,11 @@ const options = {
 };
 
 const data = await fetch(url, options).then((res) => res.json());
-//console.log(data);
 
 import Testimonial from "./Testimonial.astro";
 ---
 
 {
-  //How to show one random testimonial, and nothing else.
-
   data.map((testimonial) => {
     return <Testimonial data={testimonial} />;
   })
