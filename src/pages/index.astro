@@ -4,6 +4,10 @@ import Testimonials from "../components/Testimonials.astro";
 ---
 
 <MainLayout>
+  <!-- LOTTIEFILES -->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" is:inline></script>
+  <lottie-player id="lottiefile" src="../../public/lottiefiles/motion_graphics.json" mode="bounce" background="transparent" speed="1" style="width: 1200px; height: 571px;" autoplay loop></lottie-player>
+
   <img class="img_normal" src="../../public/img/queen.jpg" alt="Header billede" />
   <img class="img_uv" src="../../public/img/queen_uv.png" alt="Header billede UV" />
   <div>
@@ -32,6 +36,10 @@ import Testimonials from "../components/Testimonials.astro";
 </MainLayout>
 
 <style>
+  #lottiefile {
+    position: absolute;
+    z-index: 100;
+  }
   .testemonial {
     text-align: center;
     font-size: 2.3rem;
