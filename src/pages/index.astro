@@ -17,9 +17,19 @@ import Testimonials from "../components/Testimonials.astro";
     </div>
   </div>
   <div class="quiz">
-    <h2>Hvilket Escape Room passer dig bedst?</h2>
+    <h2>QUIZ - Hvilket Escape Room passer dig bedst?</h2>
+    <br />
     <form>
-      <p>Jeg kan godt lide uhyggelige oplevelser!</p>
+      <p>Jeg kan godt lide uhyggelige oplevelser.</p>
+      <br />
+      <input type="radio" id="html" name="fav_language" value="HTML" />
+      <label for="html">I høj grad</label>
+      <input type="radio" id="css" name="fav_language" value="CSS" />
+      <label for="css">I nogen grad</label>
+      <input type="radio" id="javascript" name="fav_language" value="JavaScript" />
+      <label for="javascript">Slet ikke</label>
+      <br /><br /><br />
+      <p>Jeg er god til at løse gåder.</p>
       <br />
       <input type="radio" id="html" name="fav_language" value="HTML" />
       <label for="html">I høj grad</label>
@@ -36,6 +46,12 @@ import Testimonials from "../components/Testimonials.astro";
 </MainLayout>
 
 <style>
+  input[type="radio"] {
+    margin-left: 20px;
+  }
+  p {
+    font-size: 1.2rem;
+  }
   #lottiefile {
     position: absolute;
     z-index: 100;
