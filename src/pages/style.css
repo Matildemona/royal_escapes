@@ -14,7 +14,12 @@ img {
 /*********** FONT ***********/
 @font-face {
   font-family: "opensans";
-  src: url(../../public/fonts/opensans-variablefont_wdthwght-webfont.woff2);
+  src: url(/fonts/opensans-variablefont_wdthwght-webfont.woff2);
+}
+
+@font-face {
+  font-family: "dosis";
+  src: url(/fonts/dosis-variablefont_wght-webfont.woff2);
 }
 
 /*********** STYLE ***********/
@@ -33,10 +38,14 @@ body {
 /*********** TEXT ***********/
 h1 {
   font-weight: 100;
+  font-family: dosis;
+  font-weight: bold;
 }
 h2 {
   font-weight: 100;
   margin: 10px 0 10px 0;
+  font-family: dosis;
+  font-weight: bold;
 }
 
 /*********** KNAP ***********/
