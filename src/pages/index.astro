@@ -17,6 +17,34 @@ import Testimonials from "../components/Testimonials.astro";
     </div>
   </div>
   <div>VIDEO</div>
+  <div class="textbox">
+    <div>
+      <p>
+        <span class="colorLetter">D</span>u tr<span class="colorLetter">æ</span>der ind i mørket <br />
+        i starten er d<span class="colorLetter">u</span> blind<br />
+        Men snart vil lyset skinne <br />
+        Og åbne for dit sind.<br />
+        <br />
+        Blandt kroner og juveler<br />
+        <span class="colorLetter">G</span>emmer sig <span class="colorLetter">e</span>n hemmelighed<br />
+        Den må du nu afsløre<br />
+        Før tiden løbe<span class="colorLetter">r</span> ud<br />
+      </p>
+    </div>
+    <div>
+      <p>
+        Hvor før der fandtes gåder<br />
+        <span class="colorLetter">V</span>il løsningen stå klar<br />
+        Medmindre det vi vise sig<br />
+        At du blive<span class="colorLetter">r</span> holdt for nar<br />
+        <br />
+        Og før du os forlader<br />
+        Vil <span class="colorLetter">d</span>u undre dig <span class="colorLetter">i</span>gen<br />
+        Måske er dem du stoler på<br />
+        ikke altid din ven<br />
+      </p>
+    </div>
+  </div>
   <div class="quiz">
     <h2>QUIZ - Hvilket Escape Room passer dig bedst?</h2>
     <br />
@@ -43,6 +71,7 @@ import Testimonials from "../components/Testimonials.astro";
     <br />
     <a class="knap" href="#">SE RESULTAT</a>
   </div>
+
   <div class="flexdiv">
     <img src="webp/skull.webp" alt="" />
     <img src="webp/help.webp" alt="" />
@@ -52,6 +81,16 @@ import Testimonials from "../components/Testimonials.astro";
 </MainLayout>
 
 <style>
+  .colorLetter {
+    color: rgb(255, 148, 148);
+  }
+  .textbox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 570px;
+    margin-top: 30px;
+    margin-inline: auto;
+  }
   .flexdiv {
     display: flex;
     gap: 30px;
