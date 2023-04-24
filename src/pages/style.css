@@ -61,3 +61,8 @@ h2 {
 .knap:hover {
   background-color: rgba(255, 255, 255, 0.232);
 }
+@media (max-width: 600px) {
+  .knap {
+    font-size: 1rem;
+  }
+}

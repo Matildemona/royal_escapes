@@ -48,6 +48,7 @@ import Testimonials from "../components/Testimonials.astro";
   <div class="quiz">
     <h2>QUIZ - Hvilket Escape Room passer dig bedst?</h2>
     <br />
+    <br />
     <form>
       <p>Jeg kan godt lide uhyggelige oplevelser.</p>
       <br />
@@ -58,6 +59,7 @@ import Testimonials from "../components/Testimonials.astro";
       <input type="radio" name="uhygge" value="sletikke" />
       <label for="sletikke">Slet ikke</label>
       <br /><br /><br />
+      <br />
       <p>Jeg er god til at løse gåder.</p>
       <br />
       <input type="radio" name="gaader" value="højgrad" />
@@ -67,6 +69,7 @@ import Testimonials from "../components/Testimonials.astro";
       <input type="radio" name="gaader" value="sletikke" />
       <label for="sletikke">Slet ikke</label>
     </form>
+    <br />
     <br />
     <br />
     <a class="knap" href="#">SE RESULTAT</a>
@@ -154,6 +157,18 @@ import Testimonials from "../components/Testimonials.astro";
 
     100% {
       opacity: 0%;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .img_uv {
+      margin-top: -230px;
+    }
+    svg {
+      /*why this no work :c*/
+      width: 40%;
+      height: 40%;
+      z-index: 100;
     }
   }
 </style>
