@@ -43,11 +43,20 @@ import Testimonials from "../components/Testimonials.astro";
     <br />
     <a class="knap" href="#">SE RESULTAT</a>
   </div>
-  <div>BILLEDER</div>
+  <div class="flexdiv">
+    <img src="webp/skull.webp" alt="" />
+    <img src="webp/help.webp" alt="" />
+    <img src="webp/blodskull.webp" alt="" />
+  </div>
   <br /><br />
 </MainLayout>
 
 <style>
+  .flexdiv {
+    display: flex;
+    gap: 30px;
+    padding: 20px 30px 0 30px;
+  }
   input[type="radio"] {
     margin-left: 20px;
   }
